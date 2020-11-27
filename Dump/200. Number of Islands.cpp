@@ -43,6 +43,5 @@ public:
             eraseIsland(i + 1, j, grid);
             eraseIsland(i, j + 1, grid);
         }
-    }
-            
+    }       
 };

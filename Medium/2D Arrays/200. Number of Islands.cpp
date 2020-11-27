@@ -35,7 +35,6 @@ public:
         }
         return count;
     }
-    
     void eraseIsland(int i, int j, vector<vector<char>>& grid) {
         if (0 <= i && i < grid.size() && 0 <= j && j < grid[i].size() && grid[i][j] == '1') {
             grid[i][j] = '0';
@@ -44,6 +43,5 @@ public:
             eraseIsland(i + 1, j, grid);
             eraseIsland(i, j + 1, grid);
         }
-    }
-            
+    }       
 };
