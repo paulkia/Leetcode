@@ -1,18 +1,11 @@
 class ParkingSystem {
 public:
-    int big, med, sml;
+    vector<int> garage;
     ParkingSystem(int big, int medium, int small) {
-        this->big = big;
-        this->med = medium;
-        this->sml = small;
+        garage = {big, medium, small};
     }
-    
     bool addCar(int carType) {
-        if (carType == 1) {
-            return this->big-- > 0;
-        } if (carType == 2) {
-            return this->med-- > 0;
-        } return this->sml-- > 0;
+        return garage[carType - 1]-- > 0;
     }
 };
 
