@@ -16,7 +16,6 @@ public:
         // Remove cycle
         ListNode* next = head->next;
         head->next = NULL;
-        
         return reverseList(head, next);
     }
     ListNode* reverseList(ListNode* head, ListNode* next) {
